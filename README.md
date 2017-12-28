@@ -14,6 +14,6 @@ $ go get -u github.com/kuked/su8s/cmd/su8
 $ go get -u github.com/kuked/su8s/cmd/u8s
 ```
 
-# Licence
+# License
 
 MIT
