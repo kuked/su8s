@@ -8,11 +8,9 @@ import (
 	"golang.org/x/text/transform"
 )
 
-func Reader() io.Reader {
+func Reader(r io.Reader) io.Reader {
 	d := japanese.ShiftJIS.NewDecoder()
-	r := transform.NewReader(os.Stdin, d)
-
-	return r
+	return transform.NewReader(r, d)
 }
 
 func Writer() io.Writer {
