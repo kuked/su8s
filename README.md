@@ -4,7 +4,9 @@ filter command. shift-jis to utf-8. utf-8 to shift-jis.
 
 ```
 $ cat sjis.txt | su8 > utf8.txt
+$ su8 sjis.txt > utf8.txt
 $ cat utf8.txt | u8s > sjis.txt
+$ u8s utf8.txt > sjis.txt
 ```
 
 # Installation
